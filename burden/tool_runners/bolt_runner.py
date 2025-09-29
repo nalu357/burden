@@ -6,7 +6,6 @@ import pandas as pd
 from general_utilities.association_resources import get_chromosomes, define_field_names_from_pandas, bgzip_and_tabix
 from general_utilities.import_utils.import_lib import download_bgen_file
 from general_utilities.job_management.thread_utility import ThreadUtility
-from general_utilities.plot_lib.manhattan_plotter import ManhattanPlotter
 
 from burden.tool_runners.tool_runner import ToolRunner
 
