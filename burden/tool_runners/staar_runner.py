@@ -4,7 +4,7 @@ from typing import List
 import pandas as pd
 from general_utilities.job_management.command_executor import build_default_command_executor, DockerMount
 from general_utilities.job_management.thread_utility import ThreadUtility
-from general_utilities.linear_model.proccess_model_output import process_staar_outputs
+from general_utilities.linear_model.proccess_model_output import process_model_outputs
 from general_utilities.plot_lib.manhattan_plotter import ManhattanPlotter
 
 from burden.tool_runners.tool_runner import ToolRunner
@@ -123,7 +123,7 @@ class STAARRunner(ToolRunner):
             quant_covars = [f'PC{PC}' for PC in range(1, 11)] + ['age', 'age_squared']
             if sex == 2:
                 quant_covars.append('sex')
-            cat_covars = ['wes_batch']
+            cat_covars = ['batch']
 
         quant_covars.extend(found_quantitative_covariates)
         cat_covars.extend(found_categorical_covariates)
