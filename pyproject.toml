@@ -27,5 +27,5 @@ dependencies = [
 
 [project.urls]
 Repository = "https://github.com/nalu357/burden"
-Branch = "bugfix/add_crrent_directory_as_mount_tested"
+Branch = "feature/align_with_genutils_v2"
 
